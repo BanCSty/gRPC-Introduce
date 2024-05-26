@@ -1,6 +1,6 @@
 ﻿namespace gRPC.Domain.Interfaces
 {
-    internal interface IBaseRepository<T> where T : class
+    public interface IBaseRepository<T> where T : class
     {
         Task Create(T entity, CancellationToken cancellationToken);
 
